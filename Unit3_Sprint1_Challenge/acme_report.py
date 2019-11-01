@@ -9,7 +9,7 @@ noun_name = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
 def generate_products(num_items=30):
     '''
-    Generates thirty random products
+    Generates (default thirty) random products
     '''
     list = []
     for i in range(0, num_items):

@@ -9,7 +9,8 @@ class Product:
     A general class for all acme products
     '''
 
-    def __init__(self, name: str, price=10, weight=20, flammability=0.5, identifier=randint(1000000, 9999999)):
+    def __init__(self, name: str, price=10, weight=20,
+                 flammability=0.5, identifier=randint(1000000, 9999999)):
         self.name = name
         self.price = price
         self.weight = weight
@@ -51,7 +52,7 @@ class BoxingGlove(Product):
 
     def __init__(self, weight=10):
         super().__init__(weight)
-        self.weight = 10
+        self.weight = weight
 
     def explode(self):
         # IT WON'T EXPLODE
