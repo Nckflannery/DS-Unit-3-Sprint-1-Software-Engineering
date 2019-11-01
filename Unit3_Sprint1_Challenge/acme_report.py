@@ -8,6 +8,9 @@ noun_name = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
 
 def generate_products(num_items=30):
+    '''
+    Generates thirty random products
+    '''
     list = []
     for i in range(0, num_items):
         rand_id = randint(1000000, 9999999)
@@ -22,6 +25,13 @@ def generate_products(num_items=30):
 
 
 def inventory_report(products):
+    '''
+    Gives report of product list including:
+    Unique Names
+    Average Price
+    Average Weight
+    Average Flammability
+    '''
     a = products
     a.sort()
     name_list = []

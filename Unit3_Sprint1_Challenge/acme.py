@@ -18,6 +18,10 @@ class Product:
         self.attributes = identifier, name, weight, price, flammability
 
     def stealability(self):
+        '''
+        Decides whether an item is stealable based on its
+        price and weight
+        '''
         stealable = self.price/self.weight
         if stealable < 0.5:
             return 'Not so stealable...'
@@ -27,6 +31,10 @@ class Product:
             return 'Very stealable'
 
     def explode(self):
+        '''
+        Decides if a product is likely to explode based
+        on its flammability and weight
+        '''
         boom = self.flammability * self.weight
         if boom < 10:
             return 'Fizzle'
@@ -46,9 +54,14 @@ class BoxingGlove(Product):
         self.weight = 10
 
     def explode(self):
+        # IT WON'T EXPLODE
         return "...it's a glove."
 
     def punch(self):
+        '''
+        Simulate a respone if you were punched by
+        a given boxing glove
+        '''
         if self.weight < 5:
             return 'That tickles'
         elif self.weight >= 5 and self.weight < 15:
