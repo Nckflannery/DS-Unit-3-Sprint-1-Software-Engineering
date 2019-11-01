@@ -184,6 +184,11 @@ Answer: One person can create an environment with all libraries and packages tha
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
+# MY ANSWERS
+When I review code the things that immediatly stand out to me are how the code is organized and commented. Are the variable names misleading? Are the functions difficult to follow? Is it easily readable/scannable? When I can easily follow along (thanks to comments, well structured code, naming conventions etc...) it is much easier to find bugs in the code or troubleshoot issues.
+
+Containers can be very useful in situations with mutliple environments on multiple machines because the containers supply their own environment built in. As long as you can get the container, you will be able to use it anywhere. Because of this, it is a great option for large global conglomerate like Acme to ensure that whatever we need is accessible anywhere in the system.
+
 Part 8 - Turn it in!
 Add all the files you wrote (acme.py, acme_report.py, and acme_test.py), as well as this file with your answers to part 7, to your weekly repo (DS-Unit-3-Sprint-1-Software-Engineering). Commit, push, and await feedback from Acme Corporation management. Thanks for your hard work!
 
